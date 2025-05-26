@@ -4,7 +4,7 @@ REST API untuk sistem voting yang dibangun dengan Node.js, Express, dan MySQL me
 
 ## 🌍 URL Dasar
 ```
-https://b-05-450916.uc.r.appspot.com/api
+https://voting-backend-691768696804.us-central1.run.app/
 ```
 
 ## 🔧 Teknologi yang Digunakan
