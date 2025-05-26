@@ -354,7 +354,7 @@ CREATE TABLE votes (
 
 #### Mendaftar pengguna baru
 ```bash
-curl -X POST https://b-05-450916.uc.r.appspot.com/api/register \
+curl -X POST https://voting-backend-691768696804.us-central1.run.app/register \
   -H "Content-Type: application/json" \
   -d '{
     "nik": "1234567890123456",
@@ -366,7 +366,7 @@ curl -X POST https://b-05-450916.uc.r.appspot.com/api/register \
 
 #### Login
 ```bash
-curl -X POST https://b-05-450916.uc.r.appspot.com/api/login \
+curl -X POST https://voting-backend-691768696804.us-central1.run.app/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "john@example.com",
@@ -376,12 +376,12 @@ curl -X POST https://b-05-450916.uc.r.appspot.com/api/login \
 
 #### Ambil data kandidat
 ```bash
-curl https://b-05-450916.uc.r.appspot.com/api/candidates
+curl https://voting-backend-691768696804.us-central1.run.app/candidates
 ```
 
 #### Memberikan suara
 ```bash
-curl -X POST https://b-05-450916.uc.r.appspot.com/api/vote \
+curl -X POST https://voting-backend-691768696804.us-central1.run.app/vote \
   -H "Authorization: Bearer ACCESS_TOKEN_ANDA" \
   -H "Content-Type: application/json" \
   -d '{"candidateId": 1}'
@@ -389,7 +389,7 @@ curl -X POST https://b-05-450916.uc.r.appspot.com/api/vote \
 
 #### Membuat kandidat baru (Khusus Admin)
 ```bash
-curl -X POST https://b-05-450916.uc.r.appspot.com/api/candidates \
+curl -X POST https://voting-backend-691768696804.us-central1.run.app/candidates \
   -H "Authorization: Bearer ACCESS_TOKEN_ADMIN_ANDA" \
   -F "name=Kandidat Baru" \
   -F "description=Deskripsi kandidat" \
